@@ -11,9 +11,9 @@ setInterval(() => {
      let ss = document.getElementById('ss');
 
 
-          let hr_dot = document.querySelector('.hr-dot');
-          let min_dot = document.querySelector('.min-dot');
-          let sec_dot = document.querySelector('.sec-dot');
+          let hr_dot = document.querySelector('.hr_dot');
+          let min_dot = document.querySelector('.min_dot');
+          let sec_dot = document.querySelector('.sec_dot');
 
 
 
@@ -48,11 +48,11 @@ mm.style.strokeDashoffset = 440 - (440 * m) / 60; // 60 minutes clock
 ss.style.strokeDashoffset = 440 - (440 * s) / 60; // 60 seconds clock
 
 
-hr_dot.style.transfrom = `rotate(${h / 30}deg)`; // 360 / 12 = 30
+hr_dot.style.transform = `rotate(${h * 30}deg)`; // 360 / 12 = 30
 
-min_dot.style.transform = `rotate(${m / 6}deg)`; // 360 / 60 = 6
+min_dot.style.transform = `rotate(${m * 6}deg)`; // 360 / 60 = 6
 
-sec_dot.style.transform = `rotate(${s / 6}deg)`; // 360 / 60 = 6
+sec_dot.style.transform = `rotate(${s * 6}deg)`; // 360 / 60 = 6
 
 
 
